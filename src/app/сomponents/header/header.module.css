@@ -1,0 +1,22 @@
+.main {
+    margin: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DED7CF;
+    border-bottom: 2px solid #111111;
+}
+
+.menu {
+    margin: 2vh auto 0 auto;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuItem {
+    font-weight: 500;
+    font-size: 20px;
+}
