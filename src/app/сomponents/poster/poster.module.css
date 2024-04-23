@@ -1,4 +1,14 @@
 .main {
     width: 42vw;
     height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    top: 20vh;
+    height: 130vh;
+    width: 44vw;
+    position: absolute;
 }
