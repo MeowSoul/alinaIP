@@ -1,18 +1,16 @@
+// pages/index.tsx
 import React from 'react';
-import styles from './page.module.css'
-import Header from "@/app/сomponents/header/Header";
-import Poster from "@/app/сomponents/poster/Poster";
+import Link from 'next/link';
 
-const Page = () => {
+const IndexPage: React.FC = () => {
     return (
-        <div className={styles.main}>
-            <Header/>
-            <div className={styles.posterBlock}>
-                <Poster/>
-            </div>
-
+        <div>
+            <h1>Welcome to the Main Page</h1>
+            <Link href="/mainPage">
+                <a>Go to Main Page</a>
+            </Link>
         </div>
     );
 };
 
-export default Page;
+export default IndexPage;
