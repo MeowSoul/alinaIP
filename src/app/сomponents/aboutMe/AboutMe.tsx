@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './aboutMe.module.css'
+import React from "react"
+import styles from "./aboutMe.module.css"
 
 const AboutMe = () => {
     return (
@@ -7,7 +7,10 @@ const AboutMe = () => {
             <h2 className={styles.title}>Обо мне</h2>
             <div className={styles.subtitlesBlock}>
                 <h3 className={styles.subtitle}>Владелец студий “MENTOL beauty”</h3>
-                <h3 className={styles.subtitle}>Мастер и преподаватель по наращиванию ресниц и оформлению бровей. <br/> Мастер по перманентному макияжу.</h3>
+                <h3 className={styles.subtitle}>
+                    Мастер и преподаватель по наращиванию ресниц и оформлению бровей. <br /> Мастер по перманентному
+                    макияжу.
+                </h3>
             </div>
             <div className={styles.listBlock}>
                 <div className={styles.listItem}>
@@ -24,10 +27,10 @@ const AboutMe = () => {
                 </div>
             </div>
             <div>
-                <img src="./img/about.jpg" alt=""/>
+                <img src="./img/about.jpg" alt="" />
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AboutMe;
+export default AboutMe
