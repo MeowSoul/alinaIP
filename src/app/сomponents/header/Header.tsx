@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './header.module.css'
+import React from "react"
+import styles from "./header.module.css"
 
 const Header = () => {
     return (
@@ -11,7 +11,7 @@ const Header = () => {
                 <p className={styles.menuItem}>Запись</p>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header
