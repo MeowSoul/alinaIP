@@ -7,7 +7,7 @@ const Header = () => {
         <div className={styles.main}>
             <div className={styles.menu}>
                 <p className={styles.menuItem}>Портфолио</p>
-                <Link href={"/EducationPage"} className={styles.menuItem}>
+                <Link href={"education"} className={styles.menuItem}>
                     Услуги
                 </Link>
                 <p className={styles.menuItem}>Обучение</p>
