@@ -26,7 +26,7 @@ const AboutMe = () => {
                     <p className={styles.listText}>Вложила в свои знания более 500 000 руб.</p>
                 </div>
             </div>
-            <div>
+            <div className={styles.imgBlock}>
                 <img src="./img/about.jpg" alt="" className={styles.img} />
             </div>
         </div>
