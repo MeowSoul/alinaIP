@@ -32,3 +32,27 @@
     font-size: 30px;
     font-weight: 500;
 }
+
+
+@media (max-width: 769px) {
+    .main {
+        width: 280px;
+        height: 423px;
+    }
+
+    .text {
+        width: 236px;
+        height: 382px;
+    }
+
+    .title {
+        font-size: 31px;
+    }
+
+    .discription {
+        width: 236px;
+        font-size: 15px;
+    }
+}
+
+
