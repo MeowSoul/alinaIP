@@ -15,7 +15,6 @@
 }
 
 @media (max-width: 767px) {
-
     .main {
         display: flex;
         justify-content: space-around;
