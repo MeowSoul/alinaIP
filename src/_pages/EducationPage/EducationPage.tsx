@@ -6,11 +6,9 @@ import Header from "@/сomponents/header/Header"
 const EducationPage = () => {
     return (
         <div className={styles.main}>
-            {/*<HeaderMobile />*/}
-            {/*<Header />*/}
-            {/*<div className={styles.chooseBlock}>*/}
-
-            {/*</div>*/}
+            <HeaderMobile />
+            <Header />
+            <div className={styles.chooseBlock}></div>
         </div>
     )
 }
