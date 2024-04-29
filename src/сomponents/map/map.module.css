@@ -2,3 +2,10 @@
     width: 50vw;
     height: 66vh;
 }
+
+@media (max-width: 767px) {
+    .map {
+        width: 320px;
+        height: 350px;
+    }
+}

@@ -56,3 +56,58 @@
     width: 35vw;
     height: 105vh;
 }
+
+@media (max-width: 767px) {
+    .main {
+        padding: 50px 0;
+    }
+
+    .title {
+        margin: 0 auto 55px auto;
+        width: 162px;
+        font-size: 36px;
+    }
+
+    .subtitle {
+        min-width: 278px;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .listBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    .listItem {
+        width: 268px;
+        height: 120px;
+    }
+
+    .listNumber {
+        font-size: 90px;
+        font-weight: 500;
+    }
+
+    .listText {
+        width: 214px;
+        font-size: 20px;
+    }
+
+    .imgBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 267px;
+        height: 400px;
+    }
+}

@@ -22,7 +22,7 @@ const bebasNeue = Bebas_Neue({
 })
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" className={`${montserrat.variable} ${bebasNeue.variable}`}>
+        <html lang="ru" className={`${montserrat.variable} ${bebasNeue.variable}`}>
             <body style={{ margin: 0, fontFamily: "var(--font-montserrat)" }}>{children}</body>
         </html>
     )

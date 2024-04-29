@@ -42,3 +42,33 @@
     align-items: center;
     background-color: #ded7cf;
 }
+
+@media (max-width: 769px) {
+    .posterBlock {
+        padding-bottom: 50px;
+        height: 520px;
+    }
+
+    .shadowButtonBlock {
+        padding-bottom: 50px;
+        height: 157px;
+    }
+
+    .aboutBlock {
+        height: 1305px;
+    }
+
+    .infoBlock {
+        margin: 0;
+        padding: 0;
+        height: 1370px;
+    }
+
+    .contactsBlock {
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
