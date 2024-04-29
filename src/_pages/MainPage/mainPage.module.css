@@ -57,4 +57,18 @@
     .aboutBlock {
         height: 1305px;
     }
+
+    .infoBlock {
+        margin: 0;
+        padding: 0;
+        height: 1370px;
+    }
+
+    .contactsBlock {
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
