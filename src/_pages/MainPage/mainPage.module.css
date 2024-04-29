@@ -22,3 +22,23 @@
     height: 298vh;
     background-color: #111111;
 }
+
+.infoBlock {
+    padding-top: 15vh;
+    height: 165vh;
+    background-color: #ded7cf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactsBlock {
+    margin: 0 auto;
+    width: 86vw;
+    height: 68vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ded7cf;
+}

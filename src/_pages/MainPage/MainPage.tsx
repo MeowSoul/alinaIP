@@ -1,10 +1,12 @@
 import React from "react"
 import styles from "./mainPage.module.css"
-import Header from "@/app/сomponents/header/Header"
-import Poster from "@/app/сomponents/poster/Poster"
-import ButtonShadows from "@/app/сomponents/buttonShadows/ButtonShadows"
-import AboutMe from "@/app/сomponents/aboutMe/AboutMe"
-import Map from "@/app/сomponents/map/Map"
+import Header from "@/сomponents/header/Header"
+import Poster from "@/сomponents/poster/Poster"
+import ButtonShadows from "@/сomponents/buttonShadows/ButtonShadows"
+import AboutMe from "@/сomponents/aboutMe/AboutMe"
+import YandexMap from "@/сomponents/map/Map"
+import MakeAnAppointment from "@/сomponents/makeAnAppointment/MakeAnAppointment"
+import Contacts from "@/сomponents/contacts/Contacts"
 
 const MainPage = () => {
     return (
@@ -20,8 +22,12 @@ const MainPage = () => {
             <div className={styles.aboutBlock}>
                 <AboutMe />
             </div>
-            <div className={styles.contactsBlock}>
-                <Map />
+            <div className={styles.infoBlock}>
+                <MakeAnAppointment />
+                <div className={styles.contactsBlock}>
+                    <Contacts />
+                    <YandexMap />
+                </div>
             </div>
         </div>
     )
