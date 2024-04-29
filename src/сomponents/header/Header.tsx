@@ -6,12 +6,18 @@ const Header = () => {
     return (
         <div className={styles.main}>
             <div className={styles.menu}>
-                <p className={styles.menuItem}>Портфолио</p>
+                <Link href={"/"} className={styles.menuItem}>
+                    Портфолио
+                </Link>
                 <Link href={"education"} className={styles.menuItem}>
                     Услуги
                 </Link>
-                <p className={styles.menuItem}>Обучение</p>
-                <p className={styles.menuItem}>Запись</p>
+                <Link href={"education"} className={styles.menuItem}>
+                    Обучение
+                </Link>
+                <Link href={"education"} className={styles.menuItem}>
+                    Запись
+                </Link>
             </div>
         </div>
     )
