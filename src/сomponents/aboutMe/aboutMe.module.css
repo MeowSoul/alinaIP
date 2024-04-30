@@ -146,3 +146,64 @@
         height: 60vh;
     }
 }
+
+@media (min-width: 1920px) {
+    .main {
+        padding: 15vh 0;
+        margin: 0 auto;
+        height: 50vh;
+        width: 45vw;
+        text-align: center;
+        color: white;
+    }
+
+    .title {
+        padding: 0;
+        margin: 0 auto 15vh auto;
+        font-size: 96px;
+        font-weight: 400;
+    }
+
+    .subtitlesBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .subtitle {
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .listBlock {
+        margin: 15vh auto;
+    }
+
+    .listItem {
+        width: 29vw;
+        height: 24vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+    }
+
+    .listNumber {
+        font-size: 200px;
+        font-weight: 500;
+    }
+
+    .listText {
+        width: 24vw;
+        font-size: 32px;
+    }
+
+    .img {
+        width: 35vw;
+        height: 105vh;
+    }
+}
