@@ -54,7 +54,6 @@
 
 .img {
     width: 35vw;
-    height: 105vh;
 }
 
 @media (max-width: 767px) {
@@ -142,15 +141,13 @@
     }
 
     .img {
-        width: 50vw;
-        height: 60vh;
+        width:40vw;
     }
 }
 
 @media (min-width: 1440px) {
     .img {
         width: 35vw;
-        height: 70vh;
     }
 }
 
@@ -211,13 +208,11 @@
 
     .img {
         width: 35vw;
-        height: 105vh;
     }
 }
 
 @media (min-width: 2560px) {
     .img {
         width: 40vw;
-        height: 90vh;
     }
 }
