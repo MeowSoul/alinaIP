@@ -29,3 +29,37 @@
         font-size: 18px;
     }
 }
+
+@media (min-width: 768px) {
+    .main {
+        height: 10vh;
+        width: 35vw;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .main {
+        height: 14vh;
+        width: 28vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 500;
+        background-color: #111111;
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .main:hover {
+        color: #fff;
+        border-radius: 10vh;
+        background-color: #525252;
+    }
+
+    .main:hover:after {
+        width: 0;
+    }
+}

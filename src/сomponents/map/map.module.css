@@ -9,3 +9,16 @@
         height: 350px;
     }
 }
+
+@media (min-width: 768px) {
+    .map {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1920px) {
+    .map {
+        width: 50vw;
+        height: 66vh;
+    }
+}

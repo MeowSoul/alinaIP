@@ -27,7 +27,7 @@
     font-family: var(--font-bebas-neue);
 }
 
-.discription {
+.description {
     width: 37vw;
     font-size: 30px;
     font-weight: 500;
@@ -48,8 +48,84 @@
         font-size: 31px;
     }
 
-    .discription {
+    .description {
         width: 236px;
         font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        height: 100vh;
+        width: 80vw;
+    }
+
+    .text {
+        height: 95vh;
+        width: 80vw;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .description {
+        width: 50vw;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .text {
+        height: 90%;
+        width: 90%;
+    }
+
+    .description {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .main {
+        width: 44vw;
+        height: 130vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .text {
+        width: 95%;
+        height: 97%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 96px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        font-family: var(--font-bebas-neue);
+    }
+
+    .description {
+        width: 37vw;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 2560px) {
+    .main {
+        width: 47vw;
+        height: 105vh;
     }
 }
