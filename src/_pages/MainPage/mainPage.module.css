@@ -43,7 +43,7 @@
     background-color: #ded7cf;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     .posterBlock {
         padding-bottom: 50px;
         height: 520px;
@@ -70,5 +70,16 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .shadowButtonBlock {
+        height: 30vh;
+        padding-bottom: 7vh;
+    }
+
+    .aboutBlock {
+        height: 250vh;
     }
 }

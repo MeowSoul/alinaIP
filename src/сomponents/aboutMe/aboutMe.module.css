@@ -111,3 +111,38 @@
         height: 400px;
     }
 }
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 31px;
+        width: 60vw;
+    }
+
+    .listItem {
+        width: 40vw;
+    }
+
+    .listNumber {
+        font-size: 90px;
+    }
+
+    .listText {
+        width: 30vw;
+        font-size: 24px;
+    }
+
+    .imgBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        width: 50vw;
+        height: 60vh;
+    }
+}

@@ -53,3 +53,25 @@
         font-size: 15px;
     }
 }
+
+@media (min-width: 768px) {
+
+    .main {
+        height: 100vh;
+        width: 80vw;
+    }
+
+    .text {
+        height: 95vh;
+        width: 80vw;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .discription {
+        width: 50vw;
+        font-size: 25px;
+    }
+}

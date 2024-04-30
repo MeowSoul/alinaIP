@@ -29,3 +29,9 @@
         display: none;
     }
 }
+
+@media (min-width: 768px) {
+    .menu {
+        width: 75vw;
+    }
+}
