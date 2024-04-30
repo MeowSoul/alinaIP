@@ -147,6 +147,13 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .img {
+        width: 35vw;
+        height: 70vh;
+    }
+}
+
 @media (min-width: 1920px) {
     .main {
         padding: 15vh 0;
@@ -205,5 +212,12 @@
     .img {
         width: 35vw;
         height: 105vh;
+    }
+}
+
+@media (min-width: 2560px) {
+    .img {
+        width: 40vw;
+        height: 90vh;
     }
 }

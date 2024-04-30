@@ -84,6 +84,26 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .posterBlock {
+        height: 120vh;
+    }
+
+    .shadowButtonBlock {
+        height: 30vh;
+    }
+
+    .contactsBlock {
+        margin: 0 auto;
+        width: 86vw;
+        height: 68vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #ded7cf;
+    }
+}
+
 @media (min-width: 1920px) {
     .posterBlock {
         height: 150vh;
@@ -129,5 +149,18 @@
         align-items: center;
         background-color: #ded7cf;
     }
+}
 
+@media (min-width: 2560px) {
+    .posterBlock {
+        height: 120vh;
+    }
+
+    .aboutBlock {
+        height: 268vh;
+    }
+
+    .infoBlock {
+        padding-top: 5vh;
+    }
 }

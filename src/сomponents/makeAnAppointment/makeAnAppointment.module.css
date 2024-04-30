@@ -58,6 +58,13 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .main {
+        width: 50vw;
+        height: 71vh;
+    }
+}
+
 @media (min-width: 1920px) {
     .main {
         width: 50vw;
@@ -85,5 +92,17 @@
         font-size: 64px;
         font-weight: 500;
         text-align: center;
+    }
+}
+
+@media (min-width: 2560px) {
+    .main {
+        width: 55vw;
+        height: 56vh;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: 90%;
     }
 }
