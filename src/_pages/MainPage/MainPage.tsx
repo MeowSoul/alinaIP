@@ -12,8 +12,6 @@ import HeaderMobile from "@/сomponents/headerMobile/HeaderMobile"
 const MainPage = () => {
     return (
         <div className={styles.main}>
-            <HeaderMobile />
-            <Header />
             <div className={styles.posterBlock}>
                 <Poster />
             </div>
