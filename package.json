@@ -3,13 +3,15 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next -H 192.168.31.148",
+        "dev": "next",
+        "dev-global": "next -H 0.0.0.0",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
         "style-fix": "npx prettier . --write"
     },
     "dependencies": {
+        "@pbe/react-yandex-maps": "^1.2.5",
         "react": "^18",
         "react-dom": "^18",
         "next": "14.2.1"
