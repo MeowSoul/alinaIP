@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next",
-        "dev-global": "next -H 192.168.31.148",
+        "dev-global": "next -H 0.0.0.0",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
