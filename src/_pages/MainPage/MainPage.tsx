@@ -1,13 +1,11 @@
 import React from "react"
 import styles from "./mainPage.module.css"
-import Header from "@/сomponents/header/Header"
 import Poster from "@/сomponents/poster/Poster"
 import ButtonShadows from "@/сomponents/buttonShadows/ButtonShadows"
 import AboutMe from "@/сomponents/aboutMe/AboutMe"
 import YandexMap from "@/сomponents/map/Map"
 import MakeAnAppointment from "@/сomponents/makeAnAppointment/MakeAnAppointment"
 import Contacts from "@/сomponents/contacts/Contacts"
-import HeaderMobile from "@/сomponents/headerMobile/HeaderMobile"
 
 const MainPage = () => {
     return (

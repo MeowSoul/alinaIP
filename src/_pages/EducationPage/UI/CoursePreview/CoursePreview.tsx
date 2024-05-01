@@ -15,7 +15,7 @@ const CoursePreviewItem: React.FC<CoursePreviewItemProps> = ({ name, description
                 <h1 className={styles.title}>{name}</h1>
                 <p className={styles.description}>{description}</p>
                 <div className={styles.buttonBlock}>
-                    <Link className={styles.button} href={""}>
+                    <Link className={styles.button} href={`${link}`}>
                         Выбрать
                     </Link>
                 </div>
