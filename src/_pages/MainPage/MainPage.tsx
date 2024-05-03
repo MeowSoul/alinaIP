@@ -24,7 +24,7 @@ const MainPage = () => {
                 <MakeAnAppointment />
                 <div className={styles.contactsBlock}>
                     <Contacts />
-                    <YandexMap coordinateY={0} coordinateX={0} />
+                    <YandexMap />
                 </div>
             </div>
         </div>
