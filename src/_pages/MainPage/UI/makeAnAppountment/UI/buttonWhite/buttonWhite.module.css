@@ -1,6 +1,8 @@
 .main {
     width: 23vw;
     height: 11vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +12,8 @@
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
+    text-transform: uppercase;
+    z-index: 1;
 }
 
 .main:hover {

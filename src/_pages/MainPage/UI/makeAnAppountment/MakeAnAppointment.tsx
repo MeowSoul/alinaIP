@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./makeAnAppointment.module.css"
-import ButtonWhite from "@/сomponents/makeAnAppointment/UI/buttonWhite/ButtonWhite"
+import ButtonWhite from "@/_pages/MainPage/UI/makeAnAppountment/UI/buttonWhite/ButtonWhite"
 
 const backgroundImage = "/img/lines.png"
 
