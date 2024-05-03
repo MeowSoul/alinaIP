@@ -10,17 +10,17 @@ const HeaderMobile = () => {
     return (
         <div className={styles.main}>
             <div className={isActive ? styles.wrapper_active : styles.wrapper} onClick={() => setActive(!isActive)}>
-                <Link href={""} className={styles.link}>
+                <Link href={"/"} className={styles.link}>
                     Портфолио
                 </Link>
-                <Link href={""} className={styles.link}>
-                    Портфолио
+                <Link href={"education"} className={styles.link}>
+                    Услуги
                 </Link>
                 <Link href={""} className={styles.link}>
-                    Портфолио
+                    Обучение
                 </Link>
                 <Link href={""} className={styles.link}>
-                    Портфолио
+                    Запись
                 </Link>
             </div>
             <div
