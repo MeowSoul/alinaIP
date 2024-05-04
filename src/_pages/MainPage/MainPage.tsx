@@ -3,7 +3,6 @@ import styles from "./mainPage.module.css"
 import Poster from "@/_pages/MainPage/UI/poster/Poster"
 import ButtonShadows from "@/_pages/MainPage/UI/buttonShadows/ButtonShadows"
 import AboutMe from "@/_pages/MainPage/UI/aboutMe/AboutMe"
-import YandexMap from "@/_pages/MainPage/UI/map/Map"
 import MakeAnAppointment from "@/_pages/MainPage/UI/makeAnAppountment/MakeAnAppointment"
 import Contacts from "@/_pages/MainPage/UI/contacts/Contacts"
 
