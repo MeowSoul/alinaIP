@@ -89,6 +89,13 @@
 }
 
 @media (min-width: 1440px) {
+    .main {
+        width: 86vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .title {
         font-size: 60px;
     }
@@ -104,13 +111,13 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1919px) {
     .main {
         width: 86vw;
-        height: 70vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
 
     .contactWrapper {

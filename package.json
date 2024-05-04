@@ -6,7 +6,7 @@
         "dev": "next",
         "dev-global": "next -H 0.0.0.0",
         "build": "next build",
-        "start": "next start",
+        "start": "next start -p 7000",
         "lint": "next lint",
         "style-fix": "npx prettier . --write"
     },
