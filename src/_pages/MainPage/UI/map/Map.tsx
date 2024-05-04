@@ -1,13 +1,21 @@
 "use client"
 
-import React from "react"
+import React, { FC } from "react"
 import { YMaps, Map } from "@pbe/react-yandex-maps"
 import styles from "./map.module.css"
 
-const YandexMap = () => {
+interface IProps {
+    State: number[]
+}
+
+const YandexMap: FC<IProps> = ({ State }) => {
     return (
         <YMaps>
-            <Map className={styles.map} defaultState={{ center: [53.614103, 55.946061], zoom: 18 }} />
+            <Map
+                className={styles.map}
+                state={{ center: State, zoom: 18 }}
+                defaultState={{ center: [53.614103, 55.946061], zoom: 18 }}
+            />
         </YMaps>
     )
 }
