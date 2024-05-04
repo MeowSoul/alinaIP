@@ -1,11 +1,10 @@
 import React from "react"
 import styles from "./mainPage.module.css"
-import Poster from "@/сomponents/poster/Poster"
-import ButtonShadows from "@/сomponents/buttonShadows/ButtonShadows"
-import AboutMe from "@/сomponents/aboutMe/AboutMe"
-import YandexMap from "@/сomponents/map/Map"
-import MakeAnAppointment from "@/сomponents/makeAnAppointment/MakeAnAppointment"
-import Contacts from "@/сomponents/contacts/Contacts"
+import Poster from "@/_pages/MainPage/UI/poster/Poster"
+import ButtonShadows from "@/_pages/MainPage/UI/buttonShadows/ButtonShadows"
+import AboutMe from "@/_pages/MainPage/UI/aboutMe/AboutMe"
+import MakeAnAppointment from "@/_pages/MainPage/UI/makeAnAppountment/MakeAnAppointment"
+import Contacts from "@/_pages/MainPage/UI/contacts/Contacts"
 
 const MainPage = () => {
     return (
@@ -14,8 +13,8 @@ const MainPage = () => {
                 <Poster />
             </div>
             <div className={styles.shadowButtonBlock}>
-                <ButtonShadows text={"ВЫБРАТЬ УСЛУГИ"} />
-                <ButtonShadows text={"ВЫБРАТЬ ОБУЧЕНИЕ"} />
+                <ButtonShadows link={"education"} text={"ВЫБРАТЬ УСЛУГИ"} />
+                <ButtonShadows link={""} text={"ВЫБРАТЬ ОБУЧЕНИЕ"} />
             </div>
             <div className={styles.aboutBlock}>
                 <AboutMe />
@@ -24,7 +23,6 @@ const MainPage = () => {
                 <MakeAnAppointment />
                 <div className={styles.contactsBlock}>
                     <Contacts />
-                    <YandexMap />
                 </div>
             </div>
         </div>

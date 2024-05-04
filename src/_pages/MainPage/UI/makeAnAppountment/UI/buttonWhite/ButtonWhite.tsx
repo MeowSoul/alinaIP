@@ -9,6 +9,10 @@ const ButtonWhite: React.FC<ButtonWhiteProps> = ({ text }) => {
     return (
         <div className={styles.main}>
             <p>{text}</p>
+            <span className={styles.cycrle}></span>
+            <span className={styles.cycrle}></span>
+            <span className={styles.cycrle}></span>
+            <span className={styles.cycrle}></span>
         </div>
     )
 }
