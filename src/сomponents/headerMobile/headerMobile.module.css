@@ -29,6 +29,7 @@
         position: fixed;
         left: 0;
         transition: 0.3s;
+        z-index: 100;
     }
 
     .link {

@@ -57,7 +57,23 @@
 }
 
 @media (max-width: 767px) {
+
+    .main {
+        width: 40vw;
+        padding: 20px;
+    }
+
     .text {
         font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+
+    }
+
+    .text {
+        font-size: 20px;
     }
 }

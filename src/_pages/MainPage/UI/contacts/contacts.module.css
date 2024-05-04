@@ -21,6 +21,15 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        gap: 50px;
+    }
+
+    .contactWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 55px;
     }
 
     .title {
@@ -34,13 +43,40 @@
     }
 
     .description {
+        padding-top: 20px;
         font-size: 16px;
     }
 }
 
 @media (min-width: 768px) {
+
+    .main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contactWrapper {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .title {
         font-size: 45px;
+        text-align: center;
     }
 
     .subtitle {
