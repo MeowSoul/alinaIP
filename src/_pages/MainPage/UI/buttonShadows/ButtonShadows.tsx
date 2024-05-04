@@ -9,7 +9,7 @@ interface ButtonShadowsProps {
 
 const ButtonShadows: React.FC<ButtonShadowsProps> = ({ text, link }) => {
     return (
-        <Link href={`${link}`} className={styles.main}>
+        <Link href={link} className={styles.main}>
             <p className={styles.text}>{text}</p>
         </Link>
     )
