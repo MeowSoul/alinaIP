@@ -25,7 +25,6 @@
 
 .infoBlock {
     padding-top: 15vh;
-    height: 165vh;
     background-color: #ded7cf;
     display: flex;
     justify-content: space-around;
@@ -34,9 +33,9 @@
 }
 
 .contactsBlock {
+    padding-top: 15vh;
     margin: 0 auto;
     width: 86vw;
-    height: 68vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,7 +60,6 @@
     .infoBlock {
         margin: 0;
         padding: 0;
-        height: 1370px;
     }
 
     .contactsBlock {
@@ -96,7 +94,6 @@
     .contactsBlock {
         margin: 0 auto;
         width: 86vw;
-        height: 68vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -132,7 +129,6 @@
 
     .infoBlock {
         padding-top: 15vh;
-        height: 165vh;
         background-color: #ded7cf;
         display: flex;
         justify-content: space-around;
@@ -143,7 +139,6 @@
     .contactsBlock {
         margin: 0 auto;
         width: 86vw;
-        height: 68vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
