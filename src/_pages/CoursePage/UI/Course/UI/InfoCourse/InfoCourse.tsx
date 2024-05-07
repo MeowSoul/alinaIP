@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./infoCourse.module.css"
-import ProsCourseItem from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/ProsCourse/ProsCourseItem/ProsCourseItem"
 import ProsCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/ProsCourse/ProsCourse"
 import PointsCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/PointsCourse/PointsCourse"
 import BlocksCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/BlocksCourse/BlocksCourse"
@@ -25,7 +24,7 @@ const InfoCourse = () => {
             </p>
             <PointsCourse />
             <p className={styles.description}>Но еще этот тариф включает такие блоки как:</p>
-            <BlocksCourse />
+            <BlocksCourse description={""} title={""} />
         </div>
     )
 }

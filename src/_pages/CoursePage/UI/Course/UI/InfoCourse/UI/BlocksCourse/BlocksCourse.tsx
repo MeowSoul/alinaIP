@@ -8,7 +8,7 @@ interface BlocksCourseProps {
 
 const BlocksCourse: FC<BlocksCourseProps> = ({ title, description }) => {
     return (
-        <div>
+        <div className={styles.main}>
             <img src="" alt="" />
             <p>{title}</p>
             <p>{description}</p>
