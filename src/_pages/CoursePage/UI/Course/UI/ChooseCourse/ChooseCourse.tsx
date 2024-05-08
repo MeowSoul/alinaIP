@@ -5,9 +5,9 @@ import styles from "./chooseCourse.module.css"
 const ChooseCourse = () => {
     return (
         <div className={styles.main}>
-            <ChooseCourseItem name={"Базовый курс"} url={"./img/based.png"} />
-            <ChooseCourseItem name={"Повышение квалификации"} url={"./img/based.png"} />
-            <ChooseCourseItem name={"Работа над ошибками"} url={"./img/based.png"} />
+            <ChooseCourseItem name={"Базовый курс"} url={"/img/based.png"} />
+            <ChooseCourseItem name={"Повышение квалификации"} url={"/img/based.png"} />
+            <ChooseCourseItem name={"Работа над ошибками"} url={"/img/based.png"} />
         </div>
     )
 }

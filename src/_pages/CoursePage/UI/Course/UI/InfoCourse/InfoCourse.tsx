@@ -3,6 +3,7 @@ import styles from "./infoCourse.module.css"
 import ProsCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/ProsCourse/ProsCourse"
 import PointsCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/PointsCourse/PointsCourse"
 import BlocksCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/BlocksCourse/BlocksCourse"
+import TableCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/TableCourse/TableCourse"
 
 const InfoCourse = () => {
     return (
@@ -24,7 +25,12 @@ const InfoCourse = () => {
             </p>
             <PointsCourse />
             <p className={styles.description}>Но еще этот тариф включает такие блоки как:</p>
-            <BlocksCourse description={""} title={""} />
+            <BlocksCourse />
+            <p className={styles.description}>
+                {" "}
+                <b>Подробнее по наполнению тарифов:</b>{" "}
+            </p>
+            <TableCourse />
         </div>
     )
 }
