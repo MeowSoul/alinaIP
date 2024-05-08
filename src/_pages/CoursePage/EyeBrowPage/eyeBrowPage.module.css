@@ -1,0 +1,23 @@
+.main {
+    padding-top: 50px;
+    width: 100%;
+    background-color: #ded7cf;
+}
+
+.infoBlock {
+    padding-top: 15vh;
+    background-color: #ded7cf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactsBlock {
+    margin: 100px auto;
+    width: 86vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ded7cf;
+}

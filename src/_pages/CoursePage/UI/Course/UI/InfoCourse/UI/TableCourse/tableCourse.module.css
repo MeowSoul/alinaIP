@@ -1,0 +1,48 @@
+.main {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.stringTable {
+    display: grid;
+    grid-template-columns: 3vw 28vw 7vw 7vw 7vw 7vw;
+    grid-auto-rows: 75px;
+
+}
+
+.cellTable {
+    padding-left: 18px;
+    border: 1px solid #111111;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellCaptionTable {
+    border: 1px solid #111111;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellNumberTable {
+    border: 1px solid #111111;
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellPlusTable {
+    border: 1px solid #111111;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

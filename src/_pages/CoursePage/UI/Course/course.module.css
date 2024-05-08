@@ -1,0 +1,10 @@
+.main {
+    margin: 0 auto;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emptyBlock {
+    width: 25%;
+}
