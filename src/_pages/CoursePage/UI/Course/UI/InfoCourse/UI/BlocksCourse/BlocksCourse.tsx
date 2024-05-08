@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 import styles from "./blocksCourse.module.css"
 import BlocksCourseItem from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/BlocksCourse/BlocksCourseItem/BlocksCourseItem"
 
