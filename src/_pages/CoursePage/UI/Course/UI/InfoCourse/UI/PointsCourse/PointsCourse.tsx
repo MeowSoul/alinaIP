@@ -10,11 +10,18 @@ const PointsCourse = () => {
                 number={"02"}
                 text={"Информация о том, где найти первых клиентов и психологию работы с ними."}
                 styles={{
-                    backgroundColor: "red",
-                    color: "white"
+                    backgroundColor: "white",
+                    color: "black",
                 }}
             />
-            <PointsCourseItem number={"03"} text={"Оформление самозанятости, что позволит тебе работать спокойно."} />
+            <PointsCourseItem
+                number={"03"}
+                text={"Оформление самозанятости, что позволит тебе работать спокойно."}
+                styles={{
+                    backgroundColor: "white",
+                    color: "black",
+                }}
+            />
         </div>
     )
 }

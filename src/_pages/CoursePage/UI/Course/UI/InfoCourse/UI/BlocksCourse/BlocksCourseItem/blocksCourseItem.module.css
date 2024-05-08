@@ -1,8 +1,7 @@
 .main {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }

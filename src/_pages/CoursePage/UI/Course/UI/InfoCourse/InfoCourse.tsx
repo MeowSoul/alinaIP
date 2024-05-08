@@ -27,7 +27,6 @@ const InfoCourse = () => {
             <p className={styles.description}>Но еще этот тариф включает такие блоки как:</p>
             <BlocksCourse />
             <p className={styles.description}>
-                {" "}
                 <b>Подробнее по наполнению тарифов:</b>{" "}
             </p>
             <TableCourse />
