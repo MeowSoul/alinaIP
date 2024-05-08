@@ -1,16 +1,17 @@
-import React, { FC } from "react"
-import styles from "./pointsCourseItem.module.css"
+import React, {CSSProperties, FC} from "react"
+import classes from "./pointsCourseItem.module.css"
 
 interface PointsCourseItemProps {
     number: string
     text: string
+    styles?: CSSProperties
 }
 
-const PointsCourseItem: FC<PointsCourseItemProps> = ({ number, text }) => {
+const PointsCourseItem: FC<PointsCourseItemProps> = ({ number, text, styles }) => {
     return (
-        <div className={styles.main}>
-            <p className={styles.number}>{number}</p>
-            <p className={styles.text}>{text}</p>
+        <div className={classes.main} style={styles}>
+            <p className={classes.number}>{number}</p>
+            <p className={classes.text}>{text}</p>
         </div>
     )
 }
