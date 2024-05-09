@@ -5,17 +5,17 @@
 }
 
 .infoBlock {
-    padding-top: 15vh;
+    padding-top: 150px;
     background-color: #ded7cf;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
 }
 
 .contactsBlock {
     margin: 100px auto;
-    width: 86vw;
+    width: 86dvw;
     display: flex;
     justify-content: space-around;
     align-items: center;

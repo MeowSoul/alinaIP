@@ -1,6 +1,7 @@
-import React from "react"
+import { FC } from "react"
 import styles from "./coursePreview.module.css"
 import Link from "next/link"
+
 interface CoursePreviewItemProps {
     name: string
     description: string
@@ -8,7 +9,7 @@ interface CoursePreviewItemProps {
     link: string
 }
 
-const CoursePreviewItem: React.FC<CoursePreviewItemProps> = ({ name, description, backgroundImage, link }) => {
+const CoursePreviewItem: FC<CoursePreviewItemProps> = ({ name, description, backgroundImage, link }) => {
     return (
         <div className={styles.main} style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className={styles.info}>

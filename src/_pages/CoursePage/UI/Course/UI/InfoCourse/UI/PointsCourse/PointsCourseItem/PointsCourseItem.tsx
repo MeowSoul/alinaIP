@@ -1,4 +1,4 @@
-import React, {CSSProperties, FC} from "react"
+import React, { CSSProperties, FC } from "react"
 import classes from "./pointsCourseItem.module.css"
 
 interface PointsCourseItemProps {

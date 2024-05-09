@@ -27,7 +27,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className={styles.imgBlock}>
-                <img src="./img/about.jpg" alt="" className={styles.img} />
+                <img src="/img/about.jpg" alt="" className={styles.img} />
             </div>
         </div>
     )

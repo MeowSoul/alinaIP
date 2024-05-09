@@ -14,7 +14,7 @@ const MainPage = () => {
             </div>
             <div className={styles.shadowButtonBlock}>
                 <ButtonShadows link={"education"} text={"ВЫБРАТЬ УСЛУГИ"} />
-                <ButtonShadows link={""} text={"ВЫБРАТЬ ОБУЧЕНИЕ"} />
+                <ButtonShadows link={"education"} text={"ВЫБРАТЬ ОБУЧЕНИЕ"} />
             </div>
             <div className={styles.aboutBlock}>
                 <AboutMe />

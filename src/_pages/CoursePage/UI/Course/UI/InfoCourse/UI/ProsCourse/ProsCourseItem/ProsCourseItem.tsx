@@ -1,12 +1,12 @@
-import React from "react"
+import { FC } from "react"
 import styles from "./prosCourseItem.module.css"
 
-interface ProsCourseProps {
+interface IProsCourseProps {
     numberPros: string
     text: string
 }
 
-const ProsCourseItem: React.FC<ProsCourseProps> = ({ numberPros, text }) => {
+const ProsCourseItem: FC<IProsCourseProps> = ({ numberPros, text }) => {
     return (
         <div className={styles.main}>
             <p className={styles.number}>{numberPros}</p>

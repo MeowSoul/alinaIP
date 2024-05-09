@@ -6,8 +6,9 @@ import InfoCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/InfoCourse"
 const Course = () => {
     return (
         <div className={styles.main}>
-            <div className={styles.emptyBlock}></div>
-            <ChooseCourse />
+            <div className={styles.emptyBlock}>
+                <ChooseCourse />
+            </div>
             <InfoCourse />
         </div>
     )

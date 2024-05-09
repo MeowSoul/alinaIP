@@ -1,6 +1,6 @@
 .main {
-    padding: 15vh 0;
     margin: 0 auto;
+    padding: 15vh 0;
     height: 50vh;
     width: 45vw;
     text-align: center;
@@ -8,17 +8,17 @@
 }
 
 .title {
-    padding: 0;
     margin: 0 auto 15vh auto;
+    padding: 0;
     font-size: 96px;
     font-weight: 400;
 }
 
 .subtitlesBlock {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 5vh;
 }
 
@@ -68,18 +68,18 @@
     }
 
     .subtitle {
-        min-width: 278px;
         margin: 0;
         padding: 0;
+        min-width: 278px;
         font-size: 20px;
         font-weight: 700;
     }
 
     .listBlock {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .listItem {
@@ -117,8 +117,8 @@
     }
 
     .subtitle {
-        font-size: 31px;
         width: 60vw;
+        font-size: 31px;
     }
 
     .listItem {
@@ -153,26 +153,26 @@
 
 @media (min-width: 1920px) {
     .main {
-        padding: 15vh 0;
         margin: 0 auto;
-        height: 50vh;
+        padding: 150px 0;
         width: 45vw;
+        height: 50vh;
         text-align: center;
         color: white;
     }
 
     .title {
+        margin: 0 auto 150px auto;
         padding: 0;
-        margin: 0 auto 15vh auto;
         font-size: 96px;
         font-weight: 400;
     }
 
     .subtitlesBlock {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         gap: 5vh;
     }
 
@@ -184,7 +184,7 @@
     }
 
     .listBlock {
-        margin: 15vh auto;
+        margin: 150px auto;
     }
 
     .listItem {

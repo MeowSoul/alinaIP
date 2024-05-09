@@ -1,4 +1,4 @@
-import React from "react"
+import { FC } from "react"
 import styles from "./chooseCourseItem.module.css"
 
 interface ChooseCourseItemProps {
@@ -6,7 +6,7 @@ interface ChooseCourseItemProps {
     url: string
 }
 
-const ChooseCourseItem: React.FC<ChooseCourseItemProps> = ({ name, url }) => {
+const ChooseCourseItem: FC<ChooseCourseItemProps> = ({ name, url }) => {
     return (
         <div className={styles.main}>
             <img className={styles.iconCourse} src={url} alt="" />
