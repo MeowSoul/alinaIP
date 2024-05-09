@@ -1,0 +1,22 @@
+.main {
+    margin-bottom: 100px;
+    padding: 50px 100px;
+    width: 72%;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 13px 9px 0 0 #111;
+    background: #eee;
+    font-size: 24px;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.description {
+    margin-top: 50px;
+}

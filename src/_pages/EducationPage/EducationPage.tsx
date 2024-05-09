@@ -1,9 +1,26 @@
 import React from "react"
+import styles from "./educationPage.module.css"
+import CoursePreviewItem from "@/_pages/EducationPage/UI/CoursePreview/CoursePreview"
 
 const EducationPage = () => {
     return (
-        <div>
-            <p>ДАААААА</p>
+        <div className={styles.main}>
+            <CoursePreviewItem
+                description={
+                    "Процедура, включающая в себя коррекцию формы бровей, окрашивание и создание художественного оформления"
+                }
+                name={"Оформление бровей"}
+                backgroundImage={"/img/Eyebrow.png"}
+                link={"education/eyebrow"}
+            />
+            <CoursePreviewItem
+                description={
+                    " Процесс удлинения и увеличения объема натуральных ресниц при помощи искусственных ресниц"
+                }
+                name={"Наращивание ресниц"}
+                backgroundImage={"/img/Eyelashes.png"}
+                link={"education/eyelashesw"}
+            />
         </div>
     )
 }

@@ -4,15 +4,17 @@
     "private": true,
     "scripts": {
         "dev": "next",
+        "dev-global": "next -H 0.0.0.0",
         "build": "next build",
-        "start": "next start",
+        "start": "next start -p 7000",
         "lint": "next lint",
         "style-fix": "npx prettier . --write"
     },
     "dependencies": {
         "react": "^18",
         "react-dom": "^18",
-        "next": "14.2.1"
+        "next": "14.2.1",
+        "@pbe/react-yandex-maps": "^1.2.5"
     },
     "devDependencies": {
         "typescript": "^5",

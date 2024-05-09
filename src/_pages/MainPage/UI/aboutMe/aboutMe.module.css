@@ -1,0 +1,218 @@
+.main {
+    margin: 0 auto;
+    padding: 15vh 0;
+    height: 50vh;
+    width: 45vw;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    margin: 0 auto 15vh auto;
+    padding: 0;
+    font-size: 96px;
+    font-weight: 400;
+}
+
+.subtitlesBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.listBlock {
+    margin: 15vh auto;
+}
+
+.listItem {
+    width: 29vw;
+    height: 24vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+
+.listNumber {
+    font-size: 200px;
+    font-weight: 500;
+}
+
+.listText {
+    width: 24vw;
+    font-size: 32px;
+}
+
+.img {
+    width: 35vw;
+}
+
+@media (max-width: 767px) {
+    .main {
+        padding: 50px 0;
+    }
+
+    .title {
+        margin: 0 auto 55px auto;
+        width: 162px;
+        font-size: 36px;
+    }
+
+    .subtitle {
+        margin: 0;
+        padding: 0;
+        min-width: 278px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .listBlock {
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listItem {
+        width: 268px;
+        height: 120px;
+    }
+
+    .listNumber {
+        font-size: 90px;
+        font-weight: 500;
+    }
+
+    .listText {
+        width: 214px;
+        font-size: 20px;
+    }
+
+    .imgBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 267px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        width: 60vw;
+        font-size: 31px;
+    }
+
+    .listItem {
+        width: 40vw;
+    }
+
+    .listNumber {
+        font-size: 90px;
+    }
+
+    .listText {
+        width: 30vw;
+        font-size: 24px;
+    }
+
+    .imgBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .img {
+        width: 35vw;
+    }
+}
+
+@media (min-width: 1920px) {
+    .main {
+        margin: 0 auto;
+        padding: 150px 0;
+        width: 45vw;
+        height: 50vh;
+        text-align: center;
+        color: white;
+    }
+
+    .title {
+        margin: 0 auto 150px auto;
+        padding: 0;
+        font-size: 96px;
+        font-weight: 400;
+    }
+
+    .subtitlesBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .subtitle {
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .listBlock {
+        margin: 150px auto;
+    }
+
+    .listItem {
+        width: 29vw;
+        height: 24vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+    }
+
+    .listNumber {
+        font-size: 200px;
+        font-weight: 500;
+    }
+
+    .listText {
+        width: 24vw;
+        font-size: 32px;
+    }
+
+    .img {
+        width: 35vw;
+    }
+}
+
+@media (min-width: 2560px) {
+    .img {
+        width: 40vw;
+    }
+}

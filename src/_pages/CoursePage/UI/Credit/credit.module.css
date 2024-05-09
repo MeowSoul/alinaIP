@@ -1,0 +1,21 @@
+.main {
+    padding: 150px 495px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.description {
+    font-size: 24px;
+}
