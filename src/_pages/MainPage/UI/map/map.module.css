@@ -16,6 +16,13 @@
     }
 }
 
+@media (min-width: 1439px) {
+    .map {
+        width: 50vw;
+        height: 50vh;
+    }
+}
+
 @media (min-width: 1920px) {
     .map {
         width: 50vw;

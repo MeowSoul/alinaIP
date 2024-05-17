@@ -9,7 +9,9 @@ const Course = () => {
             <div className={styles.emptyBlock}>
                 <ChooseCourse />
             </div>
-            <InfoCourse />
+            <div className={styles.infoCourseBlock}>
+                <InfoCourse />
+            </div>
         </div>
     )
 }
