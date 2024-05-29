@@ -21,3 +21,17 @@
     align-items: center;
     background-color: #ded7cf;
 }
+
+@media (max-width: 767px) {
+    .main {
+        padding: 0;
+    }
+
+    .contactsBlock {
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

@@ -1,41 +1,57 @@
-.main {
-    padding-left: 50px;
-    width: 23vw;
-    height: 13vh;
-    display: flex;
-    align-items: center;
-    border: 3px solid black;
-    box-shadow: 8px 6px 0 0 #111;
-    border-radius: 15px;
-    background-color: white;
-    position: sticky;
-    z-index: 10;
-}
+@media (min-width: 1920px) {
+    .main {
+        padding-left: 50px;
+        width: 23vw;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        border: 3px solid black;
+        box-shadow: 8px 6px 0 0 #111;
+        border-radius: 15px;
+        background-color: white;
+        position: sticky;
+        z-index: 10;
+    }
 
-.main:nth-child(1) {
-    top: 154px;
-}
+    .main:nth-child(1) {
+        top: 154px;
+    }
 
-.main:nth-child(2) {
-    top: 290px;
-}
+    .main:nth-child(2) {
+        top: 290px;
+    }
 
-.main:nth-child(3) {
-    top: 426px;
-}
+    .main:nth-child(3) {
+        top: 426px;
+    }
 
-.iconCourse {
-    width: 60px;
-    height: 60px;
-}
+    .iconCourse {
+        width: 60px;
+        height: 60px;
+    }
 
-.nameCourse {
-    padding-left: 25px;
-    font-size: 20px;
-    font-weight: 500;
+    .nameCourse {
+        padding-left: 25px;
+        font-size: 20px;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 767px) {
+    .main {
+        padding: 10px;
+        width: calc(100% / 3);
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #111111;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        background-color: white;
+    }
+
     .nameCourse {
         padding: 0;
     }

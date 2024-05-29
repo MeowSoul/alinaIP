@@ -1,17 +1,34 @@
-.main {
-    margin: 0 auto;
-    width: 96%;
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emptyBlock {
+        padding: 0;
+        width: 100%;
+        height: 55px;
+    }
 }
 
-.emptyBlock {
-    width: 25%;
-    display: block;
-    position: relative;
-    padding-bottom: 100px;
-}
+@media (min-width: 1920px) {
+    .main {
+        margin: 0 auto;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.infoCourseBlock {
-    width: 72%;
+    .emptyBlock {
+        width: 25%;
+        display: block;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .infoCourseBlock {
+        width: 72%;
+    }
 }
