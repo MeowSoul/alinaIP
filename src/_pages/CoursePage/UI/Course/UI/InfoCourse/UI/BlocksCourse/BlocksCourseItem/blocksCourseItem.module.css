@@ -1,4 +1,31 @@
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .img {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
     .main {
         display: flex;
         flex-direction: column;

@@ -13,7 +13,27 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 768px) {
+    .main {
+        margin: 0 auto;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .emptyBlock {
+        width: 35%;
+        display: block;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .infoCourseBlock {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1919px) {
     .main {
         margin: 0 auto;
         width: 96%;
