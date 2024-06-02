@@ -22,7 +22,7 @@ const ProsCourse = () => {
                     numberPros={"05"}
                     text={"По итогу проводим анализ проделанной работы, работу над ошибками."}
                 />
-                <ProsCourseItem numberPros={"06"} text={"Здоровьесбережение мастера"} />
+                <ProsCourseItem numberPros={"06"} text={"Здоровье сбережение мастера"} />
             </div>
         </div>
     )

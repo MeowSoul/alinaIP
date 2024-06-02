@@ -1,47 +1,172 @@
-.main {
-    margin-top: 50px;
-    width: 100%;
+@media (max-width: 767px) {
+    .main {
+        margin-bottom: 150px;
+    }
+
+    .stringTable {
+        margin: 0 auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 5vw 60vw 7vw 7vw 7vw 7vw;
+        grid-auto-rows: 95px;
+    }
+
+    .cellTable {
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .cellCaptionTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .cellNumberTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .cellPlusTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .cellCaptionTable:nth-child(3) {
+        font-size: 0;
+    }
+
+    .cellCaptionTable:nth-child(4) {
+        font-size: 0;
+    }
+
+    .cellCaptionTable:nth-child(5) {
+        font-size: 0;
+    }
+
+    .cellCaptionTable:nth-child(6) {
+        font-size: 0;
+    }
 }
 
-.stringTable {
-    display: grid;
-    grid-template-columns: 3vw 28vw 7vw 7vw 7vw 7vw;
-    grid-auto-rows: 75px;
+@media (min-width: 768px) {
+    .main {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .stringTable {
+        display: grid;
+        grid-template-columns: 3vw 26vw 8vw 8vw 8vw 8vw;
+        grid-auto-rows: 75px;
+    }
+
+    .cellTable {
+        padding-left: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .cellCaptionTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .cellNumberTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .cellPlusTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 28px;
+        font-weight: 600;
+    }
 }
 
-.cellTable {
-    padding-left: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #111111;
-    font-size: 18px;
-    font-weight: 500;
+@media (min-width: 1440px) {
+    .main {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .stringTable {
+        display: grid;
+        grid-template-columns: 3vw 28vw 7vw 7vw 7vw 7vw;
+        grid-auto-rows: 75px;
+    }
+
+    .cellTable {
+        padding-left: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .cellCaptionTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .cellNumberTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .cellPlusTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111111;
+        font-size: 40px;
+        font-weight: 600;
+    }
 }
 
-.cellCaptionTable {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #111111;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.cellNumberTable {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #111111;
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.cellPlusTable {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #111111;
-    font-size: 40px;
-    font-weight: 600;
+@media (min-width: 1920px) {
+    .cellCaptionTable {
+        font-size: 24px;
+    }
 }
