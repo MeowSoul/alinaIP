@@ -22,7 +22,7 @@ steps:
       commands:
           - npm install
           - npm run build
-          - mv . /var/apps/alina_frontend
+          - mv * /var/apps/alina_frontend
 
     - name: run
       commands:
