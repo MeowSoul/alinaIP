@@ -20,10 +20,10 @@ steps:
 
     - name: build
       commands:
+          - mkdir /var/apps/alina_frontend
+          - cd /var/apps/alina_frontend
           - npm install
           - npm run build
-          - mkdir /var/apps/alina_frontend
-          - mv * /var/apps/alina_frontend
 
     - name: run
       commands:
