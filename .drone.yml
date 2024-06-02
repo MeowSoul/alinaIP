@@ -1,0 +1,29 @@
+kind: pipeline
+type: exec
+name: deploy
+
+trigger:
+    branch:
+        - dev
+    event:
+        - push
+
+steps:
+    - name: cleanup-app
+      detach: true
+      commands:
+          - tmux kill-session -t alina_frontend
+
+    - name: cleanup-folder
+      commands:
+          - rm -r -f /var/apps/alina_frontend
+
+    - name: build
+      commands:
+          - npm install
+          - npm run build
+          - mv ./dist /var/apps/alina_frontend
+
+    - name: run
+      commands:
+          - tmux new-session -d -s "alina_frontend" "cd /var/apps/alina_frontend && npm run start"
