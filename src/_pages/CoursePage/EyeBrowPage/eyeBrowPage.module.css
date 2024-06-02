@@ -1,4 +1,24 @@
-@media (min-width: 1919px) {
+@media (max-width: 767px) {
+    .main {
+        padding: 0;
+        background-color: #ded7cf;
+    }
+
+    .infoBlock {
+        background-color: #ded7cf;
+    }
+
+    .contactsBlock {
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #ded7cf;
+    }
+}
+
+@media (min-width: 768px) {
     .main {
         padding-top: 50px;
         width: 100%;
@@ -24,21 +44,7 @@
     }
 }
 
-@media (max-width: 767px) {
-    .main {
-        padding: 0;
-    }
-
-    .contactsBlock {
-        height: 790px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
     .main {
         padding-top: 50px;
         width: 100%;

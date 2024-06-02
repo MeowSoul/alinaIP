@@ -61,7 +61,7 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
     .main {
         padding-left: 50px;
         width: 23vw;
