@@ -23,7 +23,7 @@ steps:
           - npm install
           - npm run build
           - mkdir /var/apps/alina_frontend
-          - mv * /var/apps/alina_frontend
+          - mv -f * /var/apps/alina_frontend
 
     - name: run
       commands:
