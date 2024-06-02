@@ -1,11 +1,54 @@
-.main {
-    margin: 0 auto;
-    width: 96%;
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emptyBlock {
+        padding: 0;
+        width: 100%;
+        height: 55px;
+    }
 }
 
-.emptyBlock {
-    width: 25%;
-    height: 100%;
+@media (min-width: 768px) {
+    .main {
+        margin: 0 auto;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .emptyBlock {
+        width: 35%;
+        display: block;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .infoCourseBlock {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main {
+        margin: 0 auto;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .emptyBlock {
+        width: 25%;
+        display: block;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .infoCourseBlock {
+        width: 72%;
+    }
 }

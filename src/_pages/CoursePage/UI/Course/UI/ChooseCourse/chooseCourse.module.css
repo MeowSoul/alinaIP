@@ -1,7 +1,32 @@
-.main {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    position: fixed;
+@media (max-width: 767px) {
+    .main {
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
+
+@media (min-width: 768px) {
+    .main {
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position: sticky;
+    }
+}
+
+@media (min-width: 1919px) {
+    .main {
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position: sticky;
+    }
+}
+
