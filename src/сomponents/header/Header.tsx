@@ -9,10 +9,10 @@ const Header = () => {
                 <Link href={"/"} className={styles.menuItem}>
                     Портфолио
                 </Link>
-                <Link href={"education"} className={styles.menuItem}>
+                <Link href={"/education"} className={styles.menuItem}>
                     Услуги
                 </Link>
-                <Link href={"education"} className={styles.menuItem}>
+                <Link href={"/education"} className={styles.menuItem}>
                     Обучение
                 </Link>
                 <Link href={"/"} className={styles.menuItem}>
