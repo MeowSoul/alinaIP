@@ -11,7 +11,7 @@ const EducationPage = () => {
                 }
                 name={"Оформление бровей"}
                 backgroundImage={"/img/Eyebrow.png"}
-                link={"education/eyebrow/basicCourse"}
+                link={"education/eyebrow/basic-course"}
             />
             <CoursePreviewItem
                 description={
@@ -19,7 +19,7 @@ const EducationPage = () => {
                 }
                 name={"Наращивание ресниц"}
                 backgroundImage={"/img/Eyelashes.png"}
-                link={"education/eyelashes/basicCourse"}
+                link={"education/eyelashes/basic-course"}
             />
         </div>
     )
