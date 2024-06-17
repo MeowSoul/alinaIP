@@ -1,0 +1,16 @@
+@media (min-width: 1440px) {
+    .create {
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        font-size: 24px;
+    }
+
+    .fieldAddCourse {
+        height: 30px;
+        border: 0.5px solid black;
+        border-radius: 2px;
+        font-size: 24px;
+    }
+}
