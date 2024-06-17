@@ -1,0 +1,34 @@
+@media (min-width: 1440px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .mainCaption {
+        margin-top: 5dvh;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5dvw;
+    }
+
+    .main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .description {
+        text-align: center;
+        width: 30dvw;
+    }
+
+    .descriptionCaption {
+        width: 15dvw;
+    }
+}
