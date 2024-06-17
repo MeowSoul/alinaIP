@@ -1,27 +1,17 @@
 "use client"
 
-import React, { useState } from "react"
+import React from "react"
 import styles from "./CreateCourse.module.css"
 import ButtonFun from "@/сomponents/ButtonFun/ButtonFun"
-import { CourseApi } from "@/enitities/course/api/courseApi"
+import {useCreateCourse} from "@/_pages/OwnerPage/UI/Panel/UI/CreateCourse/useCreateCourse";
 
-const createHeader = async (name: string, description: string, link: string) => {
-    let createResult = await CourseApi.createCourses(name, description, link)
-
-    if (createResult.hasError()) {
-        console.log(createResult.getError())
-    }
-
-    window.location.reload()
-}
 
 const CreateCourse = () => {
-    const [nameCourse, setNameCourse] = useState("")
-    const [descriptionCourse, setDescriptionCourse] = useState("")
-    const [imageFile, setImageFile] = useState("")
+
+    const {setDescriptionCourse, setNameCourse, inputRef, uploadedFile, UploadFileHandler} = useCreateCourse()
 
     return (
-        <div className={styles.create}>
+        <form className={styles.create}>
             <input
                 type="text"
                 placeholder={"Название курса"}
@@ -35,13 +25,18 @@ const CreateCourse = () => {
                 onChange={(event) => setDescriptionCourse(event.target.value)}
             />
             <input
+                onChange={(event) => UploadFileHandler(event.target.files)}
+                className={styles.input_file}
                 type="file"
                 placeholder={"Ссылка на картинку"}
-                className={styles.fieldAddCourse}
-                onChange={(event) => setImageFile(event.target.value)}
+                ref={inputRef}
             />
-            <ButtonFun onClick={() => createHeader(nameCourse, descriptionCourse, imageFile)}>Добавить</ButtonFun>
-        </div>
+            <p onClick={() => inputRef.current?.click()} className={styles.upload_file_button}>Загрузить файл</p>
+
+            {uploadedFile.length !== 0 && <img src={`http://files.projectmeow.ru/get/${uploadedFile}`} alt=""/>}
+
+            <ButtonFun>Добавить</ButtonFun>
+        </form>
     )
 }
 

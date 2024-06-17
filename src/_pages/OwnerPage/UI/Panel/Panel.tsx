@@ -6,8 +6,8 @@ import CreateCourse from "@/_pages/OwnerPage/UI/Panel/UI/CreateCourse/CreateCour
 const Panel = () => {
     return (
         <div className={styles.wrapper}>
-            <OutputCourse />
             <CreateCourse />
+            <OutputCourse />
         </div>
     )
 }
