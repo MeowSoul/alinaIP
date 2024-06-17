@@ -8,21 +8,21 @@ import {useCreateCourse} from "@/_pages/OwnerPage/UI/Panel/UI/CreateCourse/useCr
 
 const CreateCourse = () => {
 
-    const {setDescriptionCourse, setNameCourse, inputRef, uploadedFile, UploadFileHandler} = useCreateCourse()
+    const {setCourseName, setCourseDescription, setUploadedFile, inputRef, SubmitHandler, uploadedFile, UploadFileHandler} = useCreateCourse()
 
     return (
-        <form className={styles.create}>
+        <form className={styles.create} onSubmit={SubmitHandler}>
             <input
                 type="text"
                 placeholder={"Название курса"}
                 className={styles.fieldAddCourse}
-                onChange={(event) => setNameCourse(event.target.value)}
+                onChange={(event) => setCourseName(event.target.value)}
             />
             <input
                 type="text"
                 placeholder={"Описание"}
                 className={styles.fieldAddCourse}
-                onChange={(event) => setDescriptionCourse(event.target.value)}
+                onChange={(event) => setCourseDescription(event.target.value)}
             />
             <input
                 onChange={(event) => UploadFileHandler(event.target.files)}
@@ -33,7 +33,12 @@ const CreateCourse = () => {
             />
             <p onClick={() => inputRef.current?.click()} className={styles.upload_file_button}>Загрузить файл</p>
 
-            {uploadedFile.length !== 0 && <img src={`http://files.projectmeow.ru/get/${uploadedFile}`} alt=""/>}
+            {uploadedFile.length !== 0 &&
+                <div>
+                    <p className={styles.cross} onClick={() => setUploadedFile("")}>X</p>
+                    <img className={styles.uploaded_file} src={`http://files.projectmeow.ru/get/${uploadedFile}`} alt=""/>
+                </div>
+            }
 
             <ButtonFun>Добавить</ButtonFun>
         </form>

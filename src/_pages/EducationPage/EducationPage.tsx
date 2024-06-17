@@ -19,8 +19,8 @@ const EducationPage = async () => {
                     key={course.id}
                     name={course.name}
                     description={course.description}
-                    backgroundImage={"/img/Eyebrow.png"}
-                    link={`${course.id}`}
+                    backgroundImage={course.linkImage}
+                    id={`${course.id}`}
                 />
             ))}
         </div>

@@ -34,4 +34,8 @@
     .uploaded_file {
         max-width: 200px;
     }
+
+    .cross {
+        cursor: pointer;
+    }
 }
