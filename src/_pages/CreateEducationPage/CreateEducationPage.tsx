@@ -39,7 +39,16 @@ const CreateEducationPage = () => {
 
     return (
         <form className={styles.form} onSubmit={SubmitHandler}>
-            <input type="text" placeholder={"Name"} onChange={(e) => setName(e.target.value)} />
+            <label htmlFor="" className={styles.caption}>
+                Название курса
+            </label>
+
+            <input
+                type="text"
+                placeholder={"Введите название курса"}
+                onChange={(e) => setName(e.target.value)}
+                className={styles.field}
+            />
 
             <input
                 className={styles.upload_image_input}
@@ -54,9 +63,11 @@ const CreateEducationPage = () => {
 
             <div>
                 {icon.length !== 0 && (
-                    <div>
-                        <p onClick={() => setIcon("")}>X</p>
+                    <div className={styles.item_img}>
                         <img src={`http://files.projectmeow.ru/get/${icon}`} alt="" />
+                        <p className={styles.delete} onClick={() => setIcon("")}>
+                            X
+                        </p>
                     </div>
                 )}
             </div>
@@ -67,15 +78,21 @@ const CreateEducationPage = () => {
                     placeholder={"Введите плюс вашего курса"}
                     onChange={(e) => setProsDescription(e.target.value)}
                     value={prosDescription}
+                    className={styles.field}
                 />
                 <p onClick={() => AddTypicalBlockHandler("pros")}>Добавить</p>
             </div>
 
             <div>
                 {pros.map((item) => (
-                    <div key={item.id}>
-                        <p onClick={() => setPros((prevState) => [...prevState.filter((e) => e.id !== item.id)])}>X</p>
+                    <div key={item.id} className={styles.item}>
                         <p>{item.description}</p>
+                        <p
+                            className={styles.delete}
+                            onClick={() => setPros((prevState) => [...prevState.filter((e) => e.id !== item.id)])}
+                        >
+                            X
+                        </p>
                     </div>
                 ))}
             </div>
@@ -83,26 +100,30 @@ const CreateEducationPage = () => {
             <div className={styles.pros_wrapper}>
                 <input
                     type="text"
-                    placeholder={"Введите оссобенность вашего курса"}
+                    placeholder={"Введите особенность вашего курса"}
                     onChange={(e) => setPointsDescription(e.target.value)}
                     value={pointsDescription}
+                    className={styles.field}
                 />
                 <p onClick={() => AddTypicalBlockHandler("points")}>Добавить</p>
             </div>
 
             <div>
                 {points.map((item) => (
-                    <div key={item.id}>
-                        <p onClick={() => setPoints((prevState) => [...prevState.filter((e) => e.id !== item.id)])}>
+                    <div key={item.id} className={styles.item}>
+                        <p>{item.description}</p>
+                        <p
+                            className={styles.delete}
+                            onClick={() => setPoints((prevState) => [...prevState.filter((e) => e.id !== item.id)])}
+                        >
                             X
                         </p>
-                        <p>{item.description}</p>
                     </div>
                 ))}
             </div>
 
             <div className={styles.block}>
-                <h1>Основной блок</h1>
+                <h1 className={styles.caption}>Основной блок</h1>
 
                 <input
                     placeholder={"Введите название блока"}
@@ -110,6 +131,7 @@ const CreateEducationPage = () => {
                     name={"name"}
                     value={block.name ?? ""}
                     onChange={(e) => BlockChangeHandler(e.target.name, e.target.value)}
+                    className={styles.field_block}
                 />
                 <input
                     placeholder={"Введите описание блока"}
@@ -117,6 +139,7 @@ const CreateEducationPage = () => {
                     name={"description"}
                     value={block.description ?? ""}
                     onChange={(e) => BlockChangeHandler(e.target.name, e.target.value)}
+                    className={styles.field_block}
                 />
                 <input
                     type="file"
@@ -137,7 +160,9 @@ const CreateEducationPage = () => {
                     )}
                 </div>
 
-                <p onClick={BlocksChangeHandler}>Добавить блок</p>
+                <p className={styles.button} onClick={BlocksChangeHandler}>
+                    Добавить блок
+                </p>
             </div>
 
             <div>
@@ -159,7 +184,9 @@ const CreateEducationPage = () => {
                 ))}
             </div>
 
-            <p onClick={ContentHandler}>Добавить курс</p>
+            <p className={styles.button} onClick={ContentHandler}>
+                Добавить курс
+            </p>
 
             <div>
                 {content.map((content) => (
@@ -169,19 +196,19 @@ const CreateEducationPage = () => {
                             <img src={`files.projecmeow.ru/get/${content.icon}`} alt="" />
                         </div>
 
-                        <div>
+                        <div className={styles.wrapper_items}>
                             {content.pros.map((pros, index) => (
                                 <ProsCourseItem key={index} numberPros={index + 1} text={pros.description} />
                             ))}
                         </div>
 
-                        <div>
+                        <div className={styles.wrapper_items}>
                             {content.points.map((point, index) => (
                                 <PointsCourseItem key={index} text={point.description} number={index + 1} />
                             ))}
                         </div>
 
-                        <div>
+                        <div className={styles.wrapper_items}>
                             {content.blocks.map((block) => (
                                 <BlocksCourseItem
                                     title={block.name}

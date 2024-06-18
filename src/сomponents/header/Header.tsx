@@ -15,7 +15,7 @@ const Header = () => {
                 <Link href={"/education"} className={styles.menuItem}>
                     Обучение
                 </Link>
-                <Link href={"/"} className={styles.menuItem}>
+                <Link href={"https://vk.com/mentol_alina"} className={styles.menuItem}>
                     Запись
                 </Link>
             </div>

@@ -8,6 +8,10 @@ interface IProps {
 }
 
 const ChooseCourse: FC<IProps> = ({ course }) => {
+    if (!course.content) {
+        return <div>Not found</div>
+    }
+
     return (
         <div className={styles.main}>
             {course.content.map((item) => (

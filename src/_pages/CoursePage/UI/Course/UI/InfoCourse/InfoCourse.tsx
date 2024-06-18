@@ -23,7 +23,7 @@ const InfoCourse: FC<IProps> = ({ course }) => {
                 с кем оставить детей). Вы сможете изучить ее в удобном для вас месте и в удобное время.
             </p>
             <ProsCourse course={course} />
-            <p className={styles.title}>Программа базового курса по оформлению бровей</p>
+            <p className={styles.title}>Программа "{course.name}"</p>
             <p className={styles.description}>В тарифах, советую обратить внимание на ПРЕМИУМ.</p>
             <p className={styles.description}>
                 Именно в этом тарифе есть все необходимое для успешного начала ведения деятельностиа именно:
@@ -34,7 +34,7 @@ const InfoCourse: FC<IProps> = ({ course }) => {
             <p className={styles.description}>
                 <b>Подробнее по наполнению тарифов:</b>{" "}
             </p>
-            <TableCourse />
+            {course.id == 1 || course.id == 2 ? <TableCourse course={course} /> : <div></div>}
         </div>
     )
 }

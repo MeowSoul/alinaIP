@@ -27,9 +27,9 @@ export class CourseApi {
         }
     }
 
-    static async createCourses(name: string, description: string, linkImage: string): Promise<HttpResult<void>> {
+    static async createCourses(name: string, description: string, image: string): Promise<HttpResult<void>> {
         try {
-            let result = await axios.post<void>(API_URL + "/course", { name, description, linkImage })
+            let result = await axios.post<void>(API_URL + "/course", { name, description, image })
 
             return HttpResult.withOk(result.data)
         } catch (err: any) {

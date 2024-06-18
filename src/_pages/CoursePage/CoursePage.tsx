@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import styles from "./eyeBrowPage.module.css"
+import styles from "./CoursePage.module.css"
 import Course from "@/_pages/CoursePage/UI/Course/Course"
 import Credit from "@/_pages/CoursePage/UI/Credit/Credit"
 import MakeAnAppointment from "@/_pages/MainPage/UI/makeAnAppountment/MakeAnAppointment"
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
     }))
 }
 
-const EyeBrowPage: FC<IParams> = async ({ params: { id } }) => {
+const CoursePage: FC<IParams> = async ({ params: { id } }) => {
     const getCourseResult = await CourseApi.getCourse(parseInt(id))
 
     if (getCourseResult.hasError()) {
@@ -47,4 +47,4 @@ const EyeBrowPage: FC<IParams> = async ({ params: { id } }) => {
     )
 }
 
-export default EyeBrowPage
+export default CoursePage

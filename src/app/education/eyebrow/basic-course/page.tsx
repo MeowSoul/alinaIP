@@ -1,2 +1,2 @@
-import EyeBrowPage from "@/_pages/CoursePage/EyeBrowPage/EyeBrowPage"
-export default EyeBrowPage
+import CoursePage from "@/_pages/CoursePage/CoursePage"
+export default CoursePage

@@ -3,7 +3,7 @@ export interface CourseEntity {
     name: string
     description: string
     image: string
-    content: {
+    content?: {
         name: string
         icon: string
 

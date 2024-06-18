@@ -19,7 +19,7 @@ const HeaderMobile = () => {
                 <Link href={"education"} className={styles.link}>
                     Обучение
                 </Link>
-                <Link href={"/"} className={styles.link}>
+                <Link href={"https://vk.com/mentol_alina"} className={styles.link}>
                     Запись
                 </Link>
             </div>
