@@ -2,7 +2,7 @@ import React, { CSSProperties, FC } from "react"
 import classes from "./pointsCourseItem.module.css"
 
 interface PointsCourseItemProps {
-    number: string
+    number: string | number
     text: string
     styles?: CSSProperties
 }

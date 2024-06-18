@@ -1,8 +1,4 @@
-export interface CourseEntity {
-    id: number
-    name: string
-    description: string
-    image: string
+export interface IUpdateCourseContentRequest {
     content: {
         name: string
         icon: string

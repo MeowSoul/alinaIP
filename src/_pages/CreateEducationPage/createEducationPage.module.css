@@ -1,0 +1,24 @@
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload_image_button {
+    cursor: pointer;
+}
+
+.upload_image_input {
+    display: none;
+}
+
+.pros_wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}

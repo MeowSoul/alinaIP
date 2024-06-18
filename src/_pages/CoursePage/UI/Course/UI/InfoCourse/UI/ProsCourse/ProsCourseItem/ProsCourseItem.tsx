@@ -2,7 +2,7 @@ import { FC } from "react"
 import styles from "./prosCourseItem.module.css"
 
 interface IProsCourseProps {
-    numberPros: string
+    numberPros: string | number
     text: string
 }
 

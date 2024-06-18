@@ -1,10 +1,19 @@
-import React from "react"
+import React, { FC } from "react"
 import ProsCourseItem from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/ProsCourse/ProsCourseItem/ProsCourseItem"
 import styles from "./prosCourse.module.css"
+import { CourseEntity } from "@/enitities/course/courseEntity"
 
-const ProsCourse = () => {
+interface IProps {
+    course: CourseEntity
+}
+
+const ProsCourse: FC<IProps> = ({ course }) => {
     return (
         <div className={styles.main}>
+            {course.content.map((item) =>
+                item.pros.map((pros, index) => <ProsCourseItem numberPros={index + 1} text={pros.description} />),
+            )}
+
             <div className={styles.row}>
                 <ProsCourseItem
                     numberPros={"01"}

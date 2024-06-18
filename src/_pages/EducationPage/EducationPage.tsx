@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./educationPage.module.css"
 import CoursePreviewItem from "@/_pages/EducationPage/UI/CoursePreview/CoursePreview"
 import { CourseApi } from "@/enitities/course/api/courseApi"
-import {AlertService} from "@/services/AlertService";
+import { AlertService } from "@/services/AlertService"
 
 const EducationPage = async () => {
     let courses = await CourseApi.getCourses()
@@ -20,7 +20,7 @@ const EducationPage = async () => {
                     key={course.id}
                     name={course.name}
                     description={course.description}
-                    backgroundImage={course.linkImage}
+                    backgroundImage={course.image}
                     id={`${course.id}`}
                 />
             ))}
