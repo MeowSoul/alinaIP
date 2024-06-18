@@ -1,0 +1,24 @@
+@media (min-width: 1440px) {
+    .wrapper {
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.8);
+        background-blend-mode: multiply;
+    }
+
+    .main {
+        height: 35dvh;
+        width: 25dvw;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+}

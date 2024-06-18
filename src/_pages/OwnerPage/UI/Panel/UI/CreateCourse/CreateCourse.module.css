@@ -1,0 +1,41 @@
+@media (min-width: 1440px) {
+    .create {
+        margin-top: 30px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+    }
+
+    .fieldAddCourse {
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ded7cf;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .fieldAddCourse:focus {
+        outline: none;
+    }
+
+    .input_file {
+        display: none;
+    }
+
+    .upload_file_button {
+        cursor: pointer;
+    }
+
+    .uploaded_file {
+        max-width: 200px;
+    }
+
+    .cross {
+        cursor: pointer;
+    }
+}
