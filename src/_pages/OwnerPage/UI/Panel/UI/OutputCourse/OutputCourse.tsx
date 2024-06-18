@@ -2,22 +2,26 @@ import React from "react"
 import styles from "./outputCourse.module.css"
 import { CourseApi } from "@/enitities/course/api/courseApi"
 import ButtonFun from "@/сomponents/ButtonFun/ButtonFun"
+import {RedirectService} from "@/services/RedirectService";
+import {AlertService} from "@/services/AlertService";
 
 const deleteHeader = async (id: number) => {
     let deleteResult = await CourseApi.deleteCourses(id)
 
     if (deleteResult.hasError()) {
-        console.log(deleteResult.getError())
+        return AlertService.error(deleteResult.getError())
     }
 
-    window.location.reload()
+    RedirectService.reload()
 }
 
 const OutputCourse = async () => {
     let courses = await CourseApi.getCourses()
 
     if (courses.hasError()) {
-        console.log(courses.getError())
+        return (
+            <p>{courses.getError()}</p>
+        )
     }
 
     let result = courses.unwrap()

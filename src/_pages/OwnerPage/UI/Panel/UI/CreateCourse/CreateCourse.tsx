@@ -33,7 +33,7 @@ const CreateCourse = () => {
             />
             <p onClick={() => inputRef.current?.click()} className={styles.upload_file_button}>Загрузить файл</p>
 
-            {uploadedFile.length !== 0 &&
+            {uploadedFile.length &&
                 <div>
                     <p className={styles.cross} onClick={() => setUploadedFile("")}>X</p>
                     <img className={styles.uploaded_file} src={`http://files.projectmeow.ru/get/${uploadedFile}`} alt=""/>

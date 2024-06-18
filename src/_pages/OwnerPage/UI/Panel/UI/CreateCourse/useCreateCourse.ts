@@ -1,6 +1,8 @@
 import {FormEvent, useRef, useState} from "react";
 import {CourseApi} from "@/enitities/course/api/courseApi";
 import {FileApi} from "@/enitities/file/fileApi/FileApi";
+import {AlertService} from "@/services/AlertService";
+import {RedirectService} from "@/services/RedirectService";
 
 export const useCreateCourse = () => {
     const [courseName, setCourseName] = useState("")
@@ -16,23 +18,22 @@ export const useCreateCourse = () => {
         let createResult = await CourseApi.createCourses(courseName, courseDescription, uploadedFile)
 
         if (createResult.hasError()) {
-            return console.log(createResult.getError())
+            return AlertService.error(createResult.getError())
         }
 
-        window.location.reload()
+        RedirectService.reload()
     }
 
     const UploadFileHandler = async (file: FileList | null) => {
 
-        if (file && file[0]) {
-
+        if (file) {
             const formData = new FormData()
             formData.append("file", file[0])
 
             const uploadFileResult = await FileApi.uploadFile(formData)
 
             if (uploadFileResult.hasError()) {
-                console.log(uploadFileResult.getError())
+                return AlertService.error(uploadFileResult.getError())
             } else {
                 setUploadedFile(uploadFileResult.unwrap().id)
             }

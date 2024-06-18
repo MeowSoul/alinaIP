@@ -9,10 +9,10 @@ interface IModalWindow {
 const ModalWindow: FC<IModalWindow> = ({ onClick }) => {
     const password = "DFg12gfaqwe12!"
 
-    const [introducedPassword, setPassword] = useState("")
+    const [inputPassword, setInputPassword] = useState("")
 
     function checkPassword() {
-        if (password === introducedPassword) {
+        if (password === inputPassword) {
             onClick.call(null, false)
         }
     }
@@ -25,7 +25,7 @@ const ModalWindow: FC<IModalWindow> = ({ onClick }) => {
                     type="text"
                     placeholder="Введите пароль"
                     className={styles.input}
-                    onChange={(event) => setPassword(event.target.value)}
+                    onChange={(event) => setInputPassword(event.target.value)}
                 />
                 <button onClick={checkPassword}>Submit</button>
             </div>

@@ -2,12 +2,13 @@ import React from "react"
 import styles from "./educationPage.module.css"
 import CoursePreviewItem from "@/_pages/EducationPage/UI/CoursePreview/CoursePreview"
 import { CourseApi } from "@/enitities/course/api/courseApi"
+import {AlertService} from "@/services/AlertService";
 
 const EducationPage = async () => {
     let courses = await CourseApi.getCourses()
 
     if (courses.hasError()) {
-        console.log(courses.getError())
+        AlertService.error(courses.getError())
     }
 
     let result = courses.unwrap()
