@@ -1,4 +1,5 @@
 .main {
+    padding: 5dvh;
     width: 44vw;
     height: 130vh;
     display: flex;
@@ -88,6 +89,7 @@
 
 @media (min-width: 1920px) {
     .main {
+        padding: 5dvh;
         width: 44vw;
         height: 130vh;
         display: flex;

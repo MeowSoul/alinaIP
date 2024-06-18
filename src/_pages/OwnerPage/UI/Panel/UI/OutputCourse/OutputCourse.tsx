@@ -2,8 +2,9 @@ import React from "react"
 import styles from "./outputCourse.module.css"
 import { CourseApi } from "@/enitities/course/api/courseApi"
 import ButtonFun from "@/сomponents/ButtonFun/ButtonFun"
-import {RedirectService} from "@/services/RedirectService";
-import {AlertService} from "@/services/AlertService";
+import { RedirectService } from "@/services/RedirectService"
+import { AlertService } from "@/services/AlertService"
+import Link from "next/link"
 
 const deleteHeader = async (id: number) => {
     let deleteResult = await CourseApi.deleteCourses(id)
@@ -19,12 +20,12 @@ const OutputCourse = async () => {
     let courses = await CourseApi.getCourses()
 
     if (courses.hasError()) {
-        return (
-            <p>{courses.getError()}</p>
-        )
+        return <p>{courses.getError()}</p>
     }
 
     let result = courses.unwrap()
+
+    console.log(result)
 
     return (
         <div className={styles.wrapper}>
@@ -37,9 +38,9 @@ const OutputCourse = async () => {
             {result.map((course) => (
                 <div className={styles.main} key={course.id}>
                     <p>{course.id}</p>
-                    <p>{course.name}</p>
+                    <Link href={`/ownerPage/${course.id}`}>{course.name}</Link>
                     <p className={styles.description}>{course.description}</p>
-                    <p>{course.linkImage}</p>
+                    <p>{course.image}</p>
                     <ButtonFun onClick={() => deleteHeader(course.id)}>Удалить</ButtonFun>
                 </div>
             ))}

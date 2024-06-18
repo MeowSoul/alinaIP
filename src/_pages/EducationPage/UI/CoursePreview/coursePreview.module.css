@@ -130,11 +130,6 @@
         transition: 1.5s;
     }
 
-    .main:hover {
-        transform: scale(1.05);
-        transition: 1.5s;
-    }
-
     .info {
         margin-top: 20vh;
         width: 38vw;

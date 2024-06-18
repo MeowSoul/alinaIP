@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #ded7cf;
 }
 
 @media (max-width: 767px) {

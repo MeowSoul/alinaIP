@@ -24,6 +24,7 @@
 
 @media (min-width: 768px) {
     .main {
+        margin-top: 50px;
         width: 32%;
         display: flex;
         flex-direction: column;

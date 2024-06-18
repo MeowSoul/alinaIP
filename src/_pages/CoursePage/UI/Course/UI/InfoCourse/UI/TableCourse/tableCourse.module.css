@@ -128,12 +128,13 @@
     }
 
     .cellTable {
+        max-height: 125px;
         padding-left: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid #111111;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
     }
 
@@ -168,5 +169,9 @@
 @media (min-width: 1920px) {
     .cellCaptionTable {
         font-size: 24px;
+    }
+
+    .cellTable {
+        max-height: 125px;
     }
 }
