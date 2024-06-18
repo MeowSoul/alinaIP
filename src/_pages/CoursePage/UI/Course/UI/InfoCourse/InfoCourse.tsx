@@ -4,7 +4,6 @@ import ProsCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/ProsCours
 import PointsCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/PointsCourse/PointsCourse"
 import BlocksCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/BlocksCourse/BlocksCourse"
 import TableCourse from "@/_pages/CoursePage/UI/Course/UI/InfoCourse/UI/TableCourse/TableCourse"
-import Course from "@/_pages/CoursePage/UI/Course/Course"
 import { CourseEntity } from "@/enitities/course/courseEntity"
 
 interface IProps {
